@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.container{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 5fr 5fr;
+    grid-template-areas: 
+    "section header"
+    "aside main"
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #242424;
+    border-radius: 50%;
+}
+
+h3{
+    color: white;
+}
+
+.inicio{
+    position: absolute;
+    left: 70px;
+    top: 15px;
+}
+
+.casa{
+    position: absolute;
+    top: 23px;
+}
+
+.buscar{
+    position: absolute;
+    top: 53px;
+    left: 70px;
+}
+
+.lupa{
+    position: absolute;
+    top: 60px;
+}
+
+body{
+    background-color: black;
+}
+
+section{
+    grid-area: section;
+    display: flex;
+    padding: 20px;  
+    color: white;
+    background-color: #121212;
+}
+
+header{
+    grid-area: header;
+    height: 70px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 10px;
+    color: white;
+    
+}
+
+.links-header{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrar-button{
+    background-color: white;
+    border-radius: 500px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+a{
+    color: white;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes-asside{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 150px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.box-asside{
+    display: flex;
+    background-color: #242424;
+    color: white;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+
+
+.plus{
+    position: relative;
+    top: 34px;
+    right: 20px;
+    color: gray;
+
+}
+
+.biblioteca-conteudo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.biblioteca-icon{
+    color: white;
+    display: flex;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    gap: 10px;
+}
+
+.sua-biblioteca{
+    position: relative;
+    top: -5px;
+}
+
+.biblioteca{
+    color: white;
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+
+.playlist-button{
+    background-color: white;
+    border-radius: 500px;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+.podcast-button{
+    background-color: white;
+    border-radius: 500px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 10px;
+
+}
+
+
+main{
+    grid-area: main;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 0px;
+    padding: 10px 0px 0px 10px;
+}
+
+.box-podcast{
+    font-size: small;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+    grid-template-rows: 120px 120px;
+    padding: 30px;
+    gap: 10px;
+}
+
+.box{
+    background-color: black;
+}
+
+footer{
+    position: fixed;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    height: 50px;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0px;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer-button{
+    background-color: white;
+    border-radius: 500px;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+
+
